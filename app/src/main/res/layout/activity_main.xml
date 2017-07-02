@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <!--水平居中，与四周控件之间距离-->
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+
+        <!--选择难度四个字-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/puzzle_main_type"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/text_title"/>
+
+        <!--难度选择的控件-->
+        <TextView
+            android:id="@+id/tv_puzzle_main_type_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_click"
+            android:text="@string/puzzle_main_type_selected"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/text_title"/>
+
+    </LinearLayout>
+
+    <!--选择图片的控件，在上面控件的下方-->
+    <GridView
+        android:id="@+id/gv_puzzle_main_pic_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_puzzle_main_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/padding"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="@dimen/padding"
+        android:numColumns="4"
+        android:padding="@dimen/padding"
+        android:verticalSpacing="@dimen/padding"/>
+
+
+</RelativeLayout>

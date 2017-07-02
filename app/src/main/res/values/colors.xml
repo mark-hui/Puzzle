@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_text">#fff</color><!--标题的颜色-->
+    <color name="main_bg">#3EC5FF</color><!--主界面背景颜色-->
+    <color name="main_text">#fff</color><!--主界面文字颜色-->
+    <color name="tv_click">#33444444</color><!--选择难度的文字点击之后改变的颜色-->
+</resources>

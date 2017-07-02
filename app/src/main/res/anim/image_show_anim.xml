@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!--定义补间动画-->
+    <translate
+        android:duration="1000"
+        android:fromYDelta="-200%"
+        android:toYDelta="0%"/><!--设置图片进行位移变换，持续时间为1秒-->
+</set>

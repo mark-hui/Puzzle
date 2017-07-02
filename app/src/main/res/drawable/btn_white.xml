@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--按钮的外观变化设置-->
+    <item android:state_pressed="true"><!--按下状态时的外观-->
+        <shape android:shape="rectangle"><!--矩形-->
+
+            <solid android:color="#33444444"/><!--按钮背景填充颜色-->
+
+            <corners android:radius="5dp" /><!--按钮圆角-->
+
+            <!--按钮里控件与控件之间的间隔-->
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp" />
+
+        </shape>
+
+    </item>
+
+    <item><!--默认状态下按钮的外观-->
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/title_text" />
+
+            <corners android:radius="5dp" />
+
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp" />
+        </shape>
+
+    </item>
+
+</selector>

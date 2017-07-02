@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_puzzle_main_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/puzzle_main_steps"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/text_title"/><!--步数-->
+
+        <TextView
+            android:id="@+id/tv_puzzle_main_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="1"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/text_title"/><!--步数的数字-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/puzzle_main_time"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/text_title"/><!--时间-->
+
+        <TextView
+            android:id="@+id/tv_puzzle_main_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/text_title"/><!--时间的数字-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/padding">
+
+        <Button
+            android:id="@+id/btn_puzzle_main_img"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/btn_white"
+            android:text="@string/puzzle_main_img"/><!--原图按钮-->
+
+        <Button
+            android:id="@+id/btn_puzzle_main_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/btn_style"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/btn_white"
+            android:text="@string/puzzle_main_reset"/><!--重开按钮-->
+
+        <Button
+            android:id="@+id/btn_puzzle_main_back"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/btn_white"
+            android:text="@string/puzzle_main_back"/><!--返回按钮-->
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_puzzle_main_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_puzzle_main_btns"
+        android:layout_below="@id/ll_puzzle_main_spinner"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/padding"/><!--拼图游戏区域-->
+
+</RelativeLayout>

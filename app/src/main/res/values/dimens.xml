@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!--各种尺寸的设置文件-->
+    <dimen name="text_title">24sp</dimen><!--字体大小-->
+    <dimen name="padding">8dp</dimen><!--控件或者子项之间的间隔距离-->
+    <dimen name="text_title_sub">18sp</dimen><!--难度选项中的字体大小-->
+    <dimen name="text_btn">24sp</dimen><!--按钮中字体大小-->
+
+</resources>
